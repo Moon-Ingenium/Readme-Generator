@@ -38,7 +38,7 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## Minimum Application Requirements
+##"nimum Application Requirements
 
 * Meets [Submission Requirements](#submission-requirements) in the following section.
 
