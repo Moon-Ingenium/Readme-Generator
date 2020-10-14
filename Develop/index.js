@@ -44,7 +44,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "What is your Github profile?",
+        message: "What is your Github profile link?",
         name: "git"
     },
 {
@@ -58,10 +58,7 @@ inquirer
     .prompt(questions)
     .then(function (response) {
         console.log(response);
-
-        // const output = mkardown(response);
-        // writeToFile(output);
-        writeToFile(generateMarkdown(response));
+    writeToFile(generateMarkdown(response));
     }
     );
 

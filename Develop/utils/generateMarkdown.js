@@ -12,8 +12,21 @@ function generateMarkdown(data) {
 
   }
   return `# ${data.projectName}
-## Contents
-<a name ="headers"></a>
+
+##### Table of Contents
+
+[Descriptions](#description) 
+
+[Installations](#installation) 
+
+[Usage](#usage) 
+
+[Contributions](#contributing) 
+
+[Tests](#tests) 
+
+[License](#license) 
+
 ## Description
 ${data.description}
 ## Installation
@@ -27,10 +40,11 @@ ${data.test}
 ## License
 ${licenseCode}
 ${data.license}
+
 ## Questions
-${data.git}
-<p>For any addition questions please email me<p>
-${data.email}
+For any addition questions please reach out
+* <a href = "${data.git}">Github Profile</a>
+* <a href = "${data.email}">Click to Email</a>
 
 `;
 }
