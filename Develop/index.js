@@ -69,7 +69,7 @@ function writeToFile(data) {
 
     // format example
   
-    fs.writeFile("readme.md", data, function (err) {
+    fs.writeFile("sample.md", data, function (err) {
         if (err) {
             throw err;
         }
