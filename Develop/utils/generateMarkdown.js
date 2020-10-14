@@ -3,15 +3,19 @@ function generateMarkdown(data) {
   let licenseCode = "";
   if (data.license === "Apache License 2.0") {
     licenseCode = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-    if (data.license === "MIT") {
+  }
+    else if (data.license === "MIT") {
       licenseCode = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
     }
-    if (data.license=="GPL") {
+   else if (data.license === "GPL") {
       licenseCode = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
-    }
+
 
   }
   return `# ${data.projectName}
+
+
+${licenseCode}
 
 ##### Table of Contents
 
@@ -38,11 +42,11 @@ ${data.guidelines}
 ## Tests
 ${data.test}
 ## License
-${licenseCode}
+
 ${data.license}
 
 ## Questions
-For any addition questions please reach out
+For any addition questions please reach out via
 * <a href = "${data.git}">Github Profile</a>
 * <a href = "${data.email}">Click to Email</a>
 
